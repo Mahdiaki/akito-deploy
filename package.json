@@ -1,5 +1,5 @@
 {
-  "name": "zen-swap",
+  "name": "akito-deploy",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@layerzerolabs/solidity-examples": "^1.1.0",
@@ -30,6 +32,7 @@
     "hardhat": "^2.26.3",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11",
-    "vite": "^7.0.4"
+    "vite": "^7.0.4",
+    "gh-pages": "^6.1.1"
   }
 }
