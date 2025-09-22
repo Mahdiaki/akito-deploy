@@ -9,5 +9,5 @@ export default defineConfig({
       '@': '/src',
     },
   },
-  base: '/akito-deploy/', // اسم ریپازیتوری رو بذار همینجا
+  base: '/', // اسم ریپازیتوری رو بذار همینجا
 });
